@@ -1,0 +1,10 @@
+mode: set
+localTestGOLand/service/employee_service.go:16.66,18.11 2 1
+localTestGOLand/service/employee_service.go:18.11,20.3 1 0
+localTestGOLand/service/employee_service.go:21.2,21.20 1 1
+localTestGOLand/repo/employee_repo.go:15.83,22.24 3 1
+localTestGOLand/repo/employee_repo.go:22.24,23.20 1 1
+localTestGOLand/repo/employee_repo.go:23.20,25.4 1 1
+localTestGOLand/repo/employee_repo.go:27.2,27.39 1 1
+localTestGOLand/repo/employee_repo.go:27.39,29.3 1 1
+localTestGOLand/repo/employee_repo.go:30.2,30.13 1 1
