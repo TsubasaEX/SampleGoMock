@@ -25,4 +25,8 @@ func main() {
 	}
 
 	fmt.Printf("%s", greeting)
+	fmt.Printf("%s", greeting)
+	fmt.Printf("%s", greeting)
+	fmt.Printf("%s", greeting)
+	fmt.Printf("%s", greeting)
 }

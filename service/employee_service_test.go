@@ -19,30 +19,7 @@ import (
 //	return args.Get(0).([]model.Employee)
 //}
 
-type DyInterface interface {
-	//Len() int
-	Less(i, j int) bool
-	//Swap(i, j int)
-}
-
-type MyDyStruct struct {
-	DyInterface
-}
-
-func (m MyDyStruct) Less(i, j int) bool {
-	return m.DyInterface.Less(j, i)
-}
-
-type DyDef struct {
-}
-
-func (d DyDef) Less(i, j int) bool { return false }
-
 func TestGetSrEmployeeNumbers_Age40(t *testing.T) {
-	my := new(MyDyStruct)
-	fmt.Println(my.Less(1, 3))
-	//fmt.Println(my.Len())
-	fmt.Println(abc)
 	repoMockery := mocks.NewEmployeeRepo(t)
 	fmt.Println(10000)
 	repoMockery.On("FindEmployeesAgeGreaterThan", 40).
