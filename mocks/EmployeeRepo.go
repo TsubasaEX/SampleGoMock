@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	model "localTestGOLand/model"
+	model "SampleGoMock/model"
 
 	mock "github.com/stretchr/testify/mock"
 )

@@ -1,8 +1,11 @@
 package repo
 
 import (
-	"localTestGOLand/model"
+	"SampleGoMock/model"
+	"fmt"
+	"os"
 	"sort"
+	"strings"
 )
 
 type EmployeeRepo interface {
@@ -10,6 +13,16 @@ type EmployeeRepo interface {
 }
 
 type EmployeeRepoImpl struct {
+}
+
+func init() {
+	for _, v := range os.Args {
+		if strings.Contains(v, "test") {
+			fmt.Println("skipping testing")
+			return
+		}
+	}
+	fmt.Println("init repo.....")
 }
 
 func (er *EmployeeRepoImpl) FindEmployeesAgeGreaterThan(age int) []model.Employee {
@@ -28,4 +41,8 @@ func (er *EmployeeRepoImpl) FindEmployeesAgeGreaterThan(age int) []model.Employe
 		return emps[i].Age < emps[j].Age // sort by Age asc
 	})
 	return emps
+}
+
+func (es *EmployeeRepoImpl) PrintNum(age int) {
+	fmt.Println(age)
 }

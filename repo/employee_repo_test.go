@@ -1,9 +1,10 @@
 package repo
 
 import (
-	"github.com/stretchr/testify/assert"
-	"localTestGOLand/model"
+	"SampleGoMock/model"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestFindEmployeesAgeGreaterThan30(t *testing.T) {

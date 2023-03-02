@@ -1,11 +1,12 @@
 package service
 
 import (
+	"SampleGoMock/mocks"
+	"SampleGoMock/model"
 	"fmt"
-	"github.com/stretchr/testify/assert"
-	"localTestGOLand/mocks"
-	"localTestGOLand/model"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 //// define mock type
