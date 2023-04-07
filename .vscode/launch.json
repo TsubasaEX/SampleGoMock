@@ -9,9 +9,9 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/main_test.go",
-            "args": ["-test.v"],
-            // "program": "${fileDirname}"
+            // "program": "${workspaceFolder}/main_test.go",
+            // "args": ["-test.v"],
+            "program": "${fileDirname}"
         }
     ]
 }
